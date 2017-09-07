@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/font/iconfont.css" />
+		<link rel="stylesheet" href="layer/skin/default/layer.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<div class="header clearFloat">
+			<div class="w1200 clearFloat">
+				<div class="floatLeft  clearFloat">
+					<div class="floatLeft">
+						<a href="" class="sm_logo">
+							<img src="images/sml_logo_03.png" />
+						</a>
+					</div>
+					<div class="mail_nav floatLeft">
+						<ul class="clearFloat">
+							<li>
+								<a href="">邮箱选择</a>
+							</li>
+							<li>
+								<a href="">邮件编辑</a>
+							</li>
+							<li>
+								<a href="">邮件列表</a>
+							</li>
+							<li>
+								<a href="">邮件模板</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="username floatRight">
+					会员名： <span> <a href="">Demo</a> </span>
+				</div>
+				<!--<div class="paylist floatRight">
+					<a href="">
+						充值记录
+					</a>
+				</div>-->
+			</div>
+		</div>
+		<div class="mail_bt w1200">
+			<input type="text" placeholder="邮件标题" class="mailtit"/>
+			<div class="choosemail clearFloat">
+				<a href="" class="active">邮件编辑</a>
+				<a href="">邮件选择</a>
+				<a href="">模板选择</a>
+			</div>
+
+			<div class="textcon">
+				<textarea name="" rows="" cols="" id="editor_id" name="content" style="width: 100%;"></textarea>
+				<div class="emailaddres">
+					试发送，用您自己的邮箱接收并检查邮件。请填写邮箱 
+					<input type="text" />
+					并点击<a href="">试发送</a>   查看模板效果
+				</div>
+			</div>
+			<div class="emailtemp_btn">
+				<label for="tem"><input type="checkbox" id="tem" checked=""/>保存为模板</label>
+				<span>
+					<a href="" class="border-radius">保存</a>
+					<a href="" class="border-radius">发送</a>
+				</span>
+			</div>
+		</div>
+
+		<div style="height: 70px;">
+
+		</div>
+		<div class="copyright active">
+			<div class="bot_cop w1200">
+				<div>
+					底部版权
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="layer/layer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lang/en.js" type="text/javascript" charset="utf-8"></script>
+	<script src="kindeditor-all.js" type="text/javascript" charset="utf-8"></script>
+	
+
+</html>
+<script type="text/javascript">
+	 KindEditor.ready(function(K) {
+         window.editor = K.create('#editor_id');
+     });
+</script>
