@@ -19,7 +19,7 @@
 					
 					<div class="mail_nav floatLeft">
 						<ul class="clearFloat"> 
-							<li><a href="">邮箱选择</a></li>
+							<li><a href="" class="active">邮箱选择</a></li>
 							<li><a href="">邮件编辑</a></li>
 							<li><a href="">邮件列表</a></li>
 							<li><a href="">邮件模板</a></li>							
@@ -70,6 +70,7 @@
 				<img src="images/selectdown_03.png" alt="" class="floatRight"/>
 				<div class="chooselist">
 					<ul>
+						<li>通过关键词选择邮箱</li>
 						<li>1</li>
 						<li>2</li>
 						<li>3</li>
@@ -99,7 +100,7 @@
 				</div>
 				<div class="floatLeft lab_all_r">
 					<ul class="clearFloat">
-						<li class="active">标签一
+						<li>标签一
 						</li>
 						<li>标签一
 						</li>
@@ -124,7 +125,10 @@
 						</select>
 					</div>
 					<div class="mail_maintopr floatRight">
-						<ul id="yw0" class="yiiPager">
+						<ul id="yw0" class="yiiPager floatLeft">
+							<li class="first hidden">
+								<a href=" ">首页</a>
+							</li>
 							<li class="previous hidden">
 								<a href="/index.php/site/manager?num=50">上一页</a>
 							</li>
@@ -146,7 +150,11 @@
 							<li class="next">
 								<a href="/index.php/site/manager?num=50&amp;page=2">下一页</a>
 							</li>
+							<li class="last">
+								<a href="/index.php/site/manager?num=50&amp;page=169">末页</a>
+							</li>
 						</ul>
+						<input class="page" name="page" value=""><button type="button">Go</button>
 					</div>
 				</div>
 				<div class="mailtab">

@@ -232,7 +232,7 @@ body{
 	display: table-cell;
 	vertical-align: middle;
 	height: 50px;
-	width: 80px;
+	width: 100px;
 	text-align: left;
 }
 .header .sm_logo  img{
@@ -728,7 +728,7 @@ body{
 	border: 1px solid #eaeaea;
 	width: 560px;
 	padding: 15px 20px;
-	background: #fafafa;
+	background: #f2f0f0;
 	margin-bottom: 20px;
 	margin-top: 10px;
 }
@@ -1375,7 +1375,8 @@ body  .smallalert .layui-layer-btn .layui-layer-btn0{
 	margin-top: 30px;
 	margin-bottom: 70px;
 }
-.list_fy input{
+.list_fy input,
+.mail_maintopr input{
 	width: 30px;
 	height: 20px;
 	padding: 0;
@@ -1384,7 +1385,11 @@ body  .smallalert .layui-layer-btn .layui-layer-btn0{
 	vertical-align: bottom;
 	border: 1px solid #e4e4e4;
 }
-.list_fy button{
+.mail_maintopr input{
+	vertical-align: super;
+}
+.list_fy button,
+.mail_maintopr button{
 	width: 30px;
 	height: 22px;
 	border: none;
@@ -1395,7 +1400,9 @@ body  .smallalert .layui-layer-btn .layui-layer-btn0{
 	line-height: 20px;
 	vertical-align: bottom;
 }
-
+.mail_maintopr button{
+	vertical-align: super;	
+}
 
 
 
@@ -1450,9 +1457,17 @@ body  .smallalert .layui-layer-btn .layui-layer-btn0{
 }
 .mail_nav li a{
 	color: #c7c7c7;
-	font-size: 12px;
+	font-size: 14px;
 	display: block;
 	padding: 0 40px;
+}
+.mail_nav li a.active{
+	background: #ffa000;
+	color: #fff;
+}
+.mail_nav li a:hover{
+	background: #ffa000;
+	color: #fff;
 }
 .paylist{
 }
@@ -1619,6 +1634,12 @@ td{
 	height: 40px;
 	border: 1px solid #e9e9e9;
 }
+.mail_listmain table th{
+	text-align: center
+}
+.mail_listmain table tr:hover td{
+	background: #f2f0f0;
+}
 .mailtab table th{
 	text-align: center;
 	
@@ -1629,8 +1650,8 @@ td{
 	transition: all .3s ease-in-out .0s;
 }
 .mailtab table tr{
-	height: 52px;
-	line-height: 52px;
+	height: 47px;
+	line-height:47px;
 	border-bottom: 1px solid #ececec;
 }
 .mailtab table a:hover{
@@ -1682,6 +1703,7 @@ td{
 	height: 30px;
 	line-height: 30px;
 	color: #fff;
+	cursor: pointer;
 }
 .tem_main{
 	margin-top: 100px;
@@ -1817,6 +1839,9 @@ td{
 .record table tr{
 	height: 40px;
 	border-bottom: 1px solid #ececec;
+}
+.record table tr:hover td{
+	background: #f2f0f0
 }
 .recordfy{
 	margin-top: 100px;
@@ -1977,6 +2002,7 @@ td{
 	line-height: 35px;
 	text-align: center;
 	background: #686868;
+	cursor: pointer;
 }
 .pay_keywords span i{
 	color: #FFFFFF;
@@ -2025,6 +2051,7 @@ td{
 }
 .auto_teml {
 	width: 240px;
+	max-height: 600px;
 }
 .auto_teml .atuo_temltit{
 	font-size: 16px;
@@ -2050,6 +2077,12 @@ td{
 	font-size: 14px;
 	padding: 10px;
 	line-height: 20px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.auto_teml ul li.active{
+	color: #ff0000;
 }
 .auto_teml ul li:hover{
 	color: #ff0000;
@@ -2064,6 +2097,10 @@ td{
 }
 .auto_temr .addprolist ul{
 	display: none;
+	max-height: 557px;
+}
+.added ul{
+	max-height: 557px;
 }
 .auto_temr ul.active{
 	display: block;
@@ -2074,7 +2111,10 @@ td{
 	margin-right: 26px;
 	margin-bottom: 25px;
 }
-.auto_temr li:nth-child(4n){
+.auto_temr .addprolist li:nth-child(4n){
+	margin-right: 0;
+}
+.auto_temr .addprocon .added  li:nth-child(4n){
 	margin-right: 0;
 }
 .auto_temr li span{
@@ -2158,3 +2198,28 @@ body .paybtn .layui-layer-btn0{
 body .paybtn .layui-layer-btn{
 	text-align: center;
 }
+
+.mailtab table tr:hover td{
+	background: #f2f0f0;
+}
+.mCSB_inside>.mCSB_container{
+	margin-right: 0;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	margin: 0;
+}
+.mCSB_scrollTools{
+	width: 4px;
+}
+.auto_tem .cho_fl{
+	cursor: pointer;
+}
+.auto_tem .atuo_temltit.active{
+	color: #ff0000;
+}
+/*.atuo_temltit.on{
+	font-weight: bold;
+	color: #ff0000;
+	font-size: 18px;
+	cursor: pointer;
+}*/
